@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory of Glory - 2026 Year Plan</title>
     <link rel="stylesheet" href="style.css">
-    <title>Victory of Glory - Year Plan</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- Pastor's photo placeholder -->
-            <img src="pastor.jpg" alt="Pastor" class="pastor-photo">
+            <img src="pastor.jpg" alt="Pastor" class="pastor-photo" onerror="this.src='https://via.placeholder.com/130?text=Pastor'">
             <h1>Victory of Glory</h1>
             <h2>2026 Year Plan</h2>
             <div class="theme-box">
@@ -18,9 +17,18 @@
             </div>
         </header>
 
-        <!-- Events will be injected here by JavaScript -->
-        <ul id="eventList"></ul>
+        <main>
+            <h3>Annual Events & Services</h3>
+            <ul id="eventList">
+                <li class="loading">Loading 2026 events...</li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Victory of Glory Ministry. All rights reserved.</p>
+        </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
